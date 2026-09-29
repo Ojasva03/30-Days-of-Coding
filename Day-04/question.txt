@@ -1,0 +1,28 @@
+codeforces - 719724b
+The next night Team MST is on the overnight bus from Varanasi to Kanpur. Coach Tanima is coming along, so there are four of them. She calls it "the bus round" and has told them to save their energy for the real match.
+
+The highway has a toll booth at every kilometre marker. The booth at kilometre 𝑥
+ charges 𝑥mod𝑚
+ rupees, the remainder of 𝑥
+ divided by 𝑚
+. Enigma has three theories about why, and all three involve the contractor's nephew.
+
+The bus pays at every booth 𝑥
+ with 𝑎<𝑥≤𝑏
+. Coach Tanima is paying, and she wants to find the total toll across all booths. Hitman asks everyone to be quiet so he can work it out properly. What is it?
+
+Input
+The first line contains an integer 𝑇
+ (1≤𝑇≤105
+) — the number of test cases.
+
+Each of the next 𝑇
+ lines contains three integers 𝑎
+, 𝑏
+ and 𝑚
+ (1≤𝑎<𝑏≤109
+, 1≤𝑚≤109
+).
+
+Output
+For each test case print one line with a single integer:the total toll.
