@@ -1,0 +1,17 @@
+T=int(input())
+for _ in range(T):
+    a,b,m=map(int,input().split())
+    d=(((m-1)*((m-1)+1))//2)*(b//(m))
+    e=(((m-1)*((m-1)+1))//2)*(a//(m))
+    if b%m==0 and a%m==0:
+        print(d-e)
+    elif b%m!=0 and a%m==0:
+        f=b%m
+        print((d-e)+((f*((f+1))//2)))
+    elif b%m==0 and a%m!=0:
+        g=a%m
+        print((d-e)-((g*(g+1)//2)))
+    else:
+        g=a%m
+        f=b%m
+        print((d-e)-((g*(g+1))//2)+((f*(f+1))//2))
