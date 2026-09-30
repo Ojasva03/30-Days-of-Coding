@@ -1,1 +1,49 @@
+codeforces - 720455A
+Kanpur taught Team MST a lot, mostly about what not to do. Now it is Amritapuri, their second regional: two days away by train, and Coach Tanima could not get enough leave, so the three of them travel alone. Tonight they board the train at Varanasi: their first time this far south and, for Enigma, his first AC coach.
+
+Nobody can sleep. The coach corridor runs from the door at position 0
+ to the door at position 𝐿
+. At time 0
+ the coach attendant leaves the door at 0
+ and walks towards 𝐿
+ at speed 1
+ (one unit of length per second). Whenever he reaches a door, he instantly turns around and keeps walking at the same speed. This goes on all night.
+
+The team's 𝑛
+ bags stand in the corridor; the 𝑖
+-th bag is at integer position 𝑥𝑖
+, where 0<𝑥𝑖<𝐿
+, and all positions are distinct. Lying awake, Enigma counts one every time the attendant is exactly at the position of a bag.
+
+How many times does Enigma count during the moments 𝑡
+ with 0<𝑡≤𝐷
+? Different bags are counted separately.
+
+Input
+The first line contains an integer 𝑇
+ (1≤𝑇≤104
+) — the number of test cases. The test cases follow.
+
+The first line of each test case contains three integers 𝑛
+, 𝐿
+, 𝐷
+ (2≤𝐿≤109
+, 1≤𝑛≤min(𝐿−1, 2⋅105)
+, 1≤𝐷≤109
+) — the number of bags, the position of the far door, and the length of the night.
+
+The second line contains 𝑛
+ distinct integers 𝑥1,𝑥2,…,𝑥𝑛
+ (0<𝑥𝑖<𝐿
+) — the positions of the bags.
+
+It is guaranteed that the sum of 𝑛
+ over all test cases does not exceed 2⋅105
+.
+
+Output
+For each test case print one integer — the number of times Enigma counts during the moments 𝑡
+ with 0<𝑡≤𝐷
+.
+
 
