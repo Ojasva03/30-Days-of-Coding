@@ -1,0 +1,16 @@
+T = int(input())
+for _ in range(T):
+    n,L,D=map(int,input().split())
+    x=list(map(int,input().split()))
+    c=D//L
+    e=D%L
+    if e==0:
+        count = sum(1 for num in x if num <= e)
+        print ((c*n)+count)
+    else:
+        if c%2==0:
+            count = sum(1 for num in x if num <= e)
+            print ((c*n)+count)
+        else:
+            count = sum(1 for num in x if num >= (L-e))
+            print ((c*n)+count)
